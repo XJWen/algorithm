@@ -1,4 +1,4 @@
-package com.study.number;
+package com.study.method;
 
 import java.util.HashMap;
 import java.util.Map;

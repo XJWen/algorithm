@@ -1,4 +1,4 @@
-package com.study.number;
+package com.study.method;
 
 /**
  * 经典汉诺塔问题
