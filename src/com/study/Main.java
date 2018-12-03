@@ -26,5 +26,6 @@ public class Main {
 
         AboutListNode aboutListNode = new AboutListNode();
         aboutListNode.insertListNode(listNode1,listNode5,3);
+        aboutListNode.deleteListNode(listNode1,4);
     }
 }

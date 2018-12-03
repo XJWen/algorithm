@@ -20,6 +20,7 @@ public class AboutListNode {
         if (headNode == null){
             return inserNode;
         }
+        System.out.println("insertListNode:");
         int size = getListLength(headNode);
         if (position>size||position<1){
             System.out.println("插入点position不在范围内");
@@ -32,22 +33,24 @@ public class AboutListNode {
             ListNode previousNode = headNode;
             int count = 1;
             while (count<position-1){
-                previousNode = previousNode.getNext();
                 System.out.println(count+" Node data is "+previousNode.getData());
+                previousNode = previousNode.getNext();
                 count++;
             }
             ListNode currentNode = previousNode.getNext();
+            System.out.println("插入的数据在"+previousNode.getData()+"和"+currentNode.getData()+"之间");
             inserNode.setNext(currentNode);
             previousNode.setNext(inserNode);
         }
         return headNode;
     }
 
-    public ListNode DeleteListNode(ListNode headNode,int position){
+    public ListNode deleteListNode(ListNode headNode,int position){
         if (headNode==null){
             System.out.println("当前链表为空，无法删除");
             return headNode;
         }
+        System.out.println("deleteListNode");
         int size = getListLength(headNode);
         if (position>size||position<1){
             System.out.println("插入点position不在范围内");
@@ -61,14 +64,25 @@ public class AboutListNode {
             ListNode previousNode = headNode;
             int count = 1;
             while (count < position){
-                previousNode = previousNode.getNext();
                 System.out.println(count+" Node data is "+previousNode.getData());
+                previousNode = previousNode.getNext();
                 count++;
             }
             ListNode currentNode = previousNode.getNext();
+            System.out.println("删除的节点数据："+currentNode.getData());
             previousNode.setNext(currentNode.getNext());
             currentNode=null;
         }
         return headNode;
+    }
+
+    public void deleteLinkList(ListNode head){
+        ListNode auxilaryNode,iterator = head;
+        if (iterator!=null){
+            auxilaryNode =iterator.getNext();
+            System.out.println("删除的节点数据为："+iterator);
+            iterator=null;
+            iterator = auxilaryNode;
+        }
     }
 }
