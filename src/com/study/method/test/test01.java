@@ -1,4 +1,4 @@
-package com.study.method;
+package com.study.method.test;
 
 public class test01 {
 
