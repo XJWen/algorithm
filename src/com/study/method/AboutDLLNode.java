@@ -2,6 +2,9 @@ package com.study.method;
 
 import com.study.structure.DLLNode;
 
+/**
+ * 双向链表
+ * **/
 public class AboutDLLNode {
     public static int getListLength(DLLNode headNode){
         int length = 0;
