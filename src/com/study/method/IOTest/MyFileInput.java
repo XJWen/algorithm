@@ -2,6 +2,9 @@ package com.study.method.IOTest;
 
 import java.io.*;
 
+/**
+ * 与OutputStream类一样，InputStream本身也是一个抽象类，必须依靠其子类，如果现在是从文件中读取，就用FileInputStream来实现。
+ * **/
 public class MyFileInput {
     /***
      * 字节流读取文件
