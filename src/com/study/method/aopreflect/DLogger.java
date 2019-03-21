@@ -1,4 +1,4 @@
-package com.study.method.myreflect;
+package com.study.method.aopreflect;
 
 import java.lang.reflect.Method;
 import java.util.Date;

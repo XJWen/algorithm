@@ -1,4 +1,4 @@
-package com.study.method.myreflect;
+package com.study.method.aopreflect;
 
 public interface IHello {
 
