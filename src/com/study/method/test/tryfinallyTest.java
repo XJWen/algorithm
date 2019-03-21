@@ -12,15 +12,12 @@ public class tryfinallyTest {
 //            i = i/0;
 
             System.out.println("try 块");
+            return;
         }catch (ArithmeticException ex){//分母不能为零
             System.out.println("catch 块");
             return;
         }finally {
-            String type = "35";
-            if ("3".equals(type)){
-                System.out.println("3 equals 35");
-            }
-//            System.out.println("finally 块");
+            System.out.println("finally 块");
 //            return;
         }
     }
