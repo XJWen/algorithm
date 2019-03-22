@@ -6,6 +6,9 @@ import java.lang.reflect.Proxy;
 
 /**
  *  通过动态代理实现Aop
+ *  代理模式是为了提供额外或不同的操作，而插入的用来替代”实际”对象的对象，这些操作涉及到与”实际”对象的通信，
+ *  因此代理通常充当中间人角色。
+ *  Java的动态代理比代理的思想更前进了一步，它可以动态地创建并代理并动态地处理对所代理方法的调用。（不受对象类型限制）
  * **/
 public class proxyTest implements InvocationHandler {
     //调用对象
@@ -19,6 +22,7 @@ public class proxyTest implements InvocationHandler {
     public  Object bind(Object target,Object proxy){
         this.proxy = proxy;
         this.target = target;
+        //可以创建动态代理
         return Proxy.newProxyInstance(this.target.getClass().getClassLoader(),this.target.getClass().getInterfaces(),this);
     }
 
