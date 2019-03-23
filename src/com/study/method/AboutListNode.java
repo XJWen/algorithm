@@ -85,4 +85,24 @@ public class AboutListNode {
             iterator = auxilaryNode;
         }
     }
+    /**
+     * 利用递归来实现反转链表
+     * **/
+    public static ListNode reserveListNode(ListNode head){
+        //1.递归结束条件
+        if (head==null||head.getNext()==null){
+            return head;
+        }
+        //递归反转链表
+        ListNode newlistNode = reserveListNode(head.getNext());
+        // 改变 1，2节点的指向。
+       // 通过 head.next获取节点2
+        ListNode nextNode = head.getNext();
+        // 让 2 的 next 指向 1
+        nextNode.setNext(head);
+        // 1 的 next 指向 null.
+        head.setNext(null);
+
+        return newlistNode;
+    }
 }
