@@ -1,4 +1,4 @@
-package com.study.method.test;
+package com.study.sort;
 
 /**
  * 二分法查找相关元素

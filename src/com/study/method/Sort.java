@@ -14,7 +14,9 @@ public class Sort {
             }
         }
     }
-
+    /**
+     * 冒泡算法改进
+     **/
     public void BubbleSortImproved(int A[],int n){
         int pass,i,temp;
         boolean swapped = true;
@@ -135,4 +137,6 @@ public class Sort {
         A[right] = pivot_item;
         return right;
     }
+
+
 }

@@ -1,4 +1,4 @@
-package com.study.method.test;
+package com.study.sort;
 
 public class QuickSort {
 
