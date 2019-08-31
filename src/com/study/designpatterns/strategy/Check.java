@@ -1,5 +1,9 @@
 package com.study.designpatterns.strategy;
 
+/**
+ * 策略模式
+ *
+ * **/
 public class Check {
 
     public static void main(String[] args){

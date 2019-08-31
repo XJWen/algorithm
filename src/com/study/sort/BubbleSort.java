@@ -10,6 +10,9 @@ package com.study.sort;
 public class BubbleSort {
 
     public static int[] bubbleSort(int[] array){
+        if (array.length==0){
+            return array;
+        }
         int temp;
         int[] bubbleArray = array;
         for (int i=0;i<bubbleArray.length;i++){

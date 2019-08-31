@@ -1,6 +1,6 @@
 package com.study;
 
-import com.study.method.AboutListNode;
+import com.study.structure.AboutListNode;
 import com.study.structure.ListNode;
 
 public class Main {

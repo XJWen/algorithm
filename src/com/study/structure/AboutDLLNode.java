@@ -1,4 +1,4 @@
-package com.study.method;
+package com.study.structure;
 
 import com.study.structure.DLLNode;
 

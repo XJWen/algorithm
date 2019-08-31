@@ -1,7 +1,7 @@
 package com.study.designpatterns.singleton;
 
 /**
- * 单例类(懒汉模式)
+ * 单例类(懒汉模式)，采用双重校验法来避免反复创建单例
  * **/
 public class SingletonExAlways {
 

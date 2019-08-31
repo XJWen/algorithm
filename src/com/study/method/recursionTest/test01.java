@@ -1,6 +1,6 @@
 package com.study.method.recursionTest;
 
-import com.study.method.AboutListNode;
+import com.study.structure.AboutListNode;
 import com.study.structure.ListNode;
 
 public class test01 {
